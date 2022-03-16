@@ -5,7 +5,7 @@ import "../../../globalstyles/typography.css";
 //assets
 import WhiteFrame from "../../../assets/whiteframe.svg";
 import WhiteFrameOutline from "../../../assets/whiteframe-outline.svg";
-import GirlOnRocket from "../../../assets/Saly-1.svg";
+import GirlOnRocket from "../../../assets/Saly-1.png";
 import Bubbles from "../../../assets/bubbles.svg";
 
 export default function HeroWindow() {

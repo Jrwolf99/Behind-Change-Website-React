@@ -1,7 +1,7 @@
 import React from "react";
 
 //assets
-import Manatdesk from "../../../assets/man-at-desk.svg";
+import Manatdesk from "../../../assets/man-at-desk.png";
 
 export default function ManAtDesk() {
   return (

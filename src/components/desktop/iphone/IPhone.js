@@ -1,7 +1,7 @@
 import React from "react";
 
 //assets
-import Iphone from "../../../assets/iphone.svg";
+import Iphone from "../../../assets/iphone.png";
 
 export default function IPhone() {
   return (

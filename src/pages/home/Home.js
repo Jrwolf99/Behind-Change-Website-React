@@ -20,7 +20,10 @@ export default function Home() {
       {/*---------- HERO SECTION------- */}
       <div className={stylesDesktop["hero-section"]}>
         <NavBar />
-        <div className={stylesDesktop["flex-wrapper-row"]}>
+        <div
+          className={stylesDesktop["flex-wrapper-row"]}
+          style={{ justifyContent: "space-between", alignItems: "flex-start" }}
+        >
           <HeroText />
           <HeroWindow />
         </div>
@@ -28,12 +31,16 @@ export default function Home() {
 
       {/*---------- BRAND SECTION------- */}
       <div className={stylesDesktop["brand-section"]}>
-        <div className={stylesDesktop["brand-grid-wrapper"]}>
+        <div className={stylesDesktop["BrandTitle"]}>
+          <BrandTitle />
+        </div>
+
+        <div
+          className={stylesDesktop["flex-wrapper-row"]}
+          style={{ justifyContent: "center", alignItems: "flex-end" }}
+        >
           <div className={stylesDesktop["ManAtDesk"]}>
             <ManAtDesk />
-          </div>
-          <div className={stylesDesktop["BrandTitle"]}>
-            <BrandTitle />
           </div>
           <div className={stylesDesktop["IPhone"]}>
             <IPhone />
