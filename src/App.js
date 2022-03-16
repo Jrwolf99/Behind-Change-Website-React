@@ -1,6 +1,5 @@
 //packages
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import { useState } from "react";
 
 //styles
 
@@ -8,8 +7,6 @@ import { useState } from "react";
 import Home from "./pages/home/Home";
 
 function App() {
-  const [screen, setScreen] = useState("mobile");
-
   return (
     <div className="App">
       <BrowserRouter>

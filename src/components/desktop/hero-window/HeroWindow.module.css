@@ -1,5 +1,10 @@
 .hero-window {
   position: relative;
+  width: 40vw;
+}
+
+.hero-window > * {
+  width: 100%;
 }
 
 .whiteframe {
@@ -9,13 +14,13 @@
 
 .outline1 {
   position: absolute;
-  left: 0.6vw;
+  left: 0.5vw;
   top: 1vw;
 }
 .outline2 {
   position: absolute;
   left: 1vw;
-  top: 1.2vw;
+  top: 1.5vw;
 }
 
 .bubbles {

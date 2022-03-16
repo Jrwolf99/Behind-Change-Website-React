@@ -11,6 +11,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5em 4em 0 4em;
+  padding: 0em 4em 0 4em;
   max-height: 90vh;
 }
