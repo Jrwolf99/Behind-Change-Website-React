@@ -1,0 +1,26 @@
+.myNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em 4em 1em 4em;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.behind {
+  font-size: 2vw;
+  color: white;
+}
+
+.change {
+  font-size: 2vw;
+  color: white;
+}
+
+.hamburger-icon {
+  width: clamp(1rem, 2vw, 2rem);
+}

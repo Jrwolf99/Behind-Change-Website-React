@@ -1,0 +1,29 @@
+.hero-window {
+  position: relative;
+}
+
+.whiteframe {
+  position: absolute;
+  z-index: 1;
+}
+
+.outline1 {
+  position: absolute;
+  left: 0.6vw;
+  top: 1vw;
+}
+.outline2 {
+  position: absolute;
+  left: 1vw;
+  top: 1.2vw;
+}
+
+.bubbles {
+  position: absolute;
+  top: 5vw;
+  left: 0vw;
+}
+
+.girl-on-rocket {
+  transform: scale(1.15) translatey(2vw);
+}
