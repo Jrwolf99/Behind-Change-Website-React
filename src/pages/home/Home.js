@@ -13,11 +13,19 @@ export default function Home() {
   const { screenMode } = useScreen();
   return screenMode === "desktop" ? (
     <div className={stylesDesktop.home}>
-      <NavBar />
       <div className={stylesDesktop["hero-section"]}>
-        <HeroText />
-        <HeroWindow />
+        <NavBar />
+        <div className={stylesDesktop["flex-wrapper-column"]}>
+          <HeroText />
+          <HeroWindow />
+        </div>
       </div>
+
+      <div className={stylesDesktop["brand-section"]}>
+      </div>
+
+
+
     </div>
   ) : (
     <div className={stylesMobile.home}>NUTHIN</div>
