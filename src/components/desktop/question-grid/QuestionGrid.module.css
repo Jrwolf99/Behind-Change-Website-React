@@ -1,0 +1,64 @@
+/* DESKTOP */
+.questions-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-template-rows: minmax(100px, auto);
+  margin: auto;
+  padding: 30px;
+}
+
+.questions-grid > * {
+  background: rgb(255, 255, 255);
+  border-radius: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.questions-grid > * > p {
+  color: black;
+}
+
+.questions-grid .one {
+  grid-column: 1/4;
+  grid-row: 1;
+}
+.questions-grid .two {
+  grid-column: 1/2;
+  grid-row: 2;
+  height: 200px;
+
+  background: linear-gradient(149.25deg, #049999 0%, #2a38b3 100%);
+}
+
+.questions-grid .two > p {
+  color: white;
+}
+
+.questions-grid .three {
+  grid-column: 2/4;
+  grid-row: 2;
+  height: 200px;
+}
+.questions-grid .four {
+  grid-column: 1/4;
+  grid-row: 3;
+  height: 100px;
+}
+.questions-grid .five {
+  grid-column: 1/3;
+  grid-row: 4/6;
+}
+.questions-grid .six {
+  grid-column: 3/4;
+  height: 100px;
+  grid-row: 4;
+}
+
+.questions-grid .seven {
+  grid-column: 3/4;
+  height: 100px;
+  grid-row: 5;
+}

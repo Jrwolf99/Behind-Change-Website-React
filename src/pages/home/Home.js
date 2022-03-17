@@ -3,6 +3,7 @@
 import { useScreen } from "../../hooks/useScreen";
 import stylesDesktop from "./HomeDesktop.module.css";
 import stylesMobile from "./HomeMobile.module.css";
+import "../../globalstyles/typography.css";
 
 //components
 import HeroText from "../../components/desktop/hero-text/HeroText";
@@ -11,6 +12,10 @@ import NavBar from "../../components/desktop/navbar/NavBar";
 import ManAtDesk from "../../components/desktop/man-at-desk/ManAtDesk";
 import BrandTitle from "../../components/desktop/brand-title/BrandTitle";
 import IPhone from "../../components/desktop/iphone/IPhone";
+import InfoCard from "../../components/desktop/info-card/InfoCard";
+import ProcessTitle from "../../components/desktop/process-title/ProcessTitle";
+import CartoonPhone from "../../components/desktop/cartoon-phone/CartoonPhone";
+import QuestionGrid from "../../components/desktop/question-grid/QuestionGrid";
 
 export default function Home() {
   const { screenMode } = useScreen();
@@ -49,10 +54,66 @@ export default function Home() {
       </div>
 
       {/*---------- PROCESS SECTION------- */}
-      <div className={stylesDesktop["process-section"]}>PROCESS SECTION </div>
+      <div className={stylesDesktop["process-section"]}>
+        <CartoonPhone style={{ position: "absolute" }} />
+
+        <div
+          className={stylesDesktop["flex-wrapper-column"]}
+          style={{
+            justifyContent: "space-around",
+            alignItems: "center",
+            gap: "100px",
+          }}
+        >
+          <div
+            className={stylesDesktop["flex-wrapper-row"]}
+            style={{
+              justifyContent: "space-around",
+              alignItems: "center",
+              width: "100vw",
+            }}
+          >
+            <InfoCard>
+              <h2 className="inter-600">Create</h2>
+              <p className="inter-200">
+                a holistic website / social media format that will grow your
+                brand’s online identity.
+              </p>
+            </InfoCard>
+            <ProcessTitle />
+          </div>
+
+          <InfoCard>
+            <h2 className="inter-600">Maintain</h2>
+            <p className="inter-200">
+              your site’s responsiveness by updating features and repairing
+              bugs.
+            </p>
+          </InfoCard>
+          <div
+            className={stylesDesktop["flex-wrapper-row"]}
+            style={{
+              justifyContent: "space-around",
+              alignItems: "center",
+              width: "100vw",
+            }}
+          >
+            <div></div>
+            <InfoCard>
+              <h2 className="inter-600">Inform</h2>
+              <p className="inter-200">
+                you of the proper techniques to maintain / update your site
+                independently.
+              </p>
+            </InfoCard>
+          </div>
+        </div>
+      </div>
 
       {/*---------- QUESTION SECTION------- */}
-      <div className={stylesDesktop["question-section"]}>QUESTION SECTION </div>
+      <div className={stylesDesktop["question-section"]}>
+        <QuestionGrid />
+      </div>
 
       {/*---------- ACTION SECTION------- */}
       <div className={stylesDesktop["action-section"]}>ACTION SECTION </div>

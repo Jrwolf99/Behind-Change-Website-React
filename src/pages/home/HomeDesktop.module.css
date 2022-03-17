@@ -19,13 +19,12 @@
   padding: 0 15vw;
 }
 .process-section {
-  height: 100vh; /*CHANGE ME LATER*/
-  padding: 0 15vw;
+  padding: 2vw 15vw;
   background: var(--bluegradient);
   border-radius: 0 0 100px 100px;
+  position: relative;
 }
 .question-section {
-  height: 100vh; /*CHANGE ME LATER*/
   padding: 0 15vw;
   background: var(--whiteish);
   border-radius: 0 0 100px 100px;
