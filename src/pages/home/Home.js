@@ -16,6 +16,7 @@ import InfoCard from "../../components/desktop/info-card/InfoCard";
 import ProcessTitle from "../../components/desktop/process-title/ProcessTitle";
 import CartoonPhone from "../../components/desktop/cartoon-phone/CartoonPhone";
 import QuestionGrid from "../../components/desktop/question-grid/QuestionGrid";
+import ActionText from "../../components/desktop/action-text/ActionText";
 
 export default function Home() {
   const { screenMode } = useScreen();
@@ -116,7 +117,12 @@ export default function Home() {
       </div>
 
       {/*---------- ACTION SECTION------- */}
-      <div className={stylesDesktop["action-section"]}>ACTION SECTION </div>
+      <div className={stylesDesktop["action-section"]}>
+
+        <ActionText />
+
+
+      </div>
     </div>
   ) : (
     <div className={stylesMobile.home}>NUTHIN</div>
