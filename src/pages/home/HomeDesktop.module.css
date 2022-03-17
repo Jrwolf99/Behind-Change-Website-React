@@ -6,6 +6,12 @@
     #96f2ff 100%
   );
   --whiteish: #f6f6f6;
+
+  overflow-x: hidden;
+}
+
+body {
+  background: var(--whiteish);
 }
 
 .hero-section {
