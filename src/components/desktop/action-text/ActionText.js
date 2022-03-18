@@ -8,9 +8,10 @@ export default function ActionText() {
   return (
     <div className={styles["action-text"]}>
       <p className="inter-200">
-        Make an <strong>impact!</strong> Let’s get in touch.
+        Make an <strong>impact!</strong>
+        <br /> Let’s get in touch.
       </p>
-      <Link>Start a proposal &gt;</Link>
+      <Link className={styles["mylink"]}>Start a proposal &gt;</Link>
     </div>
   );
 }

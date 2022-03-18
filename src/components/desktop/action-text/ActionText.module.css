@@ -1,8 +1,23 @@
 .action-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .action-text p {
   color: white;
   font-size: 4rem;
   text-align: center;
+}
+.action-text Link {
+  color: white;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.action-text .mylink {
+  color: white;
+  font-size: 2rem;
+  text-decoration: underline;
 }
