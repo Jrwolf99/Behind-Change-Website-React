@@ -41,12 +41,35 @@
 .questions-grid .two {
   grid-column: 1/2;
   grid-row: 2;
-  height: 200px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  font-size: 2rem;
+
+  position: relative;
 
   background: linear-gradient(149.25deg, #049999 0%, #2a38b3 100%);
 }
 
-.questions-grid .two > p {
+.questions-grid .two .top-of-webbing {
+  position: absolute;
+  width: 120%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 3vw;
+}
+
+.top-of-webbing .planet {
+  width: 25vw;
+}
+
+.top-of-webbing > p {
   color: white;
 }
 

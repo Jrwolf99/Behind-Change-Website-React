@@ -4,6 +4,9 @@ import { Link } from "react-router-dom";
 
 import styles from "./QuestionGrid.module.css";
 
+import planet from "../../../assets/planet.png";
+import webbing from "../../../assets/webbing.png";
+
 export default function QuestionGrid() {
   return (
     <div className={styles["questions-grid"]}>
@@ -14,7 +17,19 @@ export default function QuestionGrid() {
         </p>
       </div>
       <div className={styles["two"]}>
-        <p>Increase your reach.</p>
+        <div className={styles["webbing"]}>
+          <img src={webbing} />
+        </div>
+
+        <div className={styles["top-of-webbing"]}>
+          <p>
+            Increase your <br />
+            <strong>reach.</strong>
+          </p>
+          <div className={styles["planet"]}>
+            <img src={planet} />
+          </div>
+        </div>
       </div>
       <div className={styles["three"]}>
         <p>An abundance of tools at your disposal.</p>
