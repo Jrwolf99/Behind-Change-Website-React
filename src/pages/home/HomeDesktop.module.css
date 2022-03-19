@@ -37,7 +37,6 @@ body {
 }
 
 .action-section {
-  height: 100vh; /*CHANGE ME LATER*/
   padding: 0 15vw;
   background: var(--bluegradient);
   border-radius: 0 0 100px 100px;

@@ -3,16 +3,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 40vh 0em;
 }
 
-.action-text p {
+.action-text {
   color: white;
   font-size: 4rem;
   text-align: center;
 }
-.action-text Link {
+.mylink-text {
   color: white;
-  font-size: 4rem;
+  font-size: 1.4rem;
   text-align: center;
 }
 
