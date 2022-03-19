@@ -6,6 +6,7 @@ import styles from "./QuestionGrid.module.css";
 
 import planet from "../../../assets/planet.png";
 import webbing from "../../../assets/webbing.png";
+import tools from "../../../assets/tools.png";
 
 export default function QuestionGrid() {
   return (
@@ -18,7 +19,7 @@ export default function QuestionGrid() {
       </div>
       <div className={styles["two"]}>
         <div className={styles["webbing"]}>
-          <img src={webbing} />
+          <img src={webbing} alt="a planet" />
         </div>
 
         <div className={styles["top-of-webbing"]}>
@@ -27,11 +28,16 @@ export default function QuestionGrid() {
             <strong>reach.</strong>
           </p>
           <div className={styles["planet"]}>
-            <img src={planet} />
+            <img src={planet} alt="a planet" />
           </div>
         </div>
       </div>
+
       <div className={styles["three"]}>
+        <div className={styles["tools"]}>
+          <img src={tools} alt="tools used to build ehind change websites" />
+        </div>
+
         <p>An abundance of tools at your disposal.</p>
       </div>
       <div className={styles["four"]}>
