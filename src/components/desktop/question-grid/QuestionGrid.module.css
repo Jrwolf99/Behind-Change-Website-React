@@ -8,13 +8,14 @@
   padding: 30px;
 }
 
-.questions-grid > * {
+.questions-grid > .card {
   background: rgb(255, 255, 255);
   border: 1px solid#E2E2E2;
 
   border-radius: 40px;
 
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -76,8 +77,8 @@
 .questions-grid .three {
   grid-column: 2/4;
   grid-row: 2;
-  height: 200px;
 }
+
 .questions-grid .four {
   grid-column: 1/4;
   grid-row: 3;
