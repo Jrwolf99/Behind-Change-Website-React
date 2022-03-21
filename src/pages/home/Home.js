@@ -5,18 +5,20 @@ import stylesDesktop from "./HomeDesktop.module.css";
 import stylesMobile from "./HomeMobile.module.css";
 import "../../globalstyles/typography.css";
 
-//components
-import HeroText from "../../components/desktop/hero-text/HeroText";
-import HeroWindow from "../../components/desktop/hero-window/HeroWindow";
-import NavBar from "../../components/desktop/navbar/NavBar";
-import ManAtDesk from "../../components/desktop/man-at-desk/ManAtDesk";
-import BrandTitle from "../../components/desktop/brand-title/BrandTitle";
-import IPhone from "../../components/desktop/iphone/IPhone";
-import InfoCard from "../../components/desktop/info-card/InfoCard";
-import ProcessTitle from "../../components/desktop/process-title/ProcessTitle";
-import CartoonPhone from "../../components/desktop/cartoon-phone/CartoonPhone";
-import QuestionGrid from "../../components/desktop/question-grid/QuestionGrid";
-import ActionText from "../../components/desktop/action-text/ActionText";
+//desktop components
+import D_HeroText from "../../components/desktop/hero-text/HeroText";
+import D_HeroWindow from "../../components/desktop/hero-window/HeroWindow";
+import D_NavBar from "../../components/desktop/navbar/NavBar";
+import D_ManAtDesk from "../../components/desktop/man-at-desk/ManAtDesk";
+import D_BrandTitle from "../../components/desktop/brand-title/BrandTitle";
+import D_IPhone from "../../components/desktop/iphone/IPhone";
+import D_InfoCard from "../../components/desktop/info-card/InfoCard";
+import D_ProcessTitle from "../../components/desktop/process-title/ProcessTitle";
+import D_CartoonPhone from "../../components/desktop/cartoon-phone/CartoonPhone";
+import D_QuestionGrid from "../../components/desktop/question-grid/QuestionGrid";
+import D_ActionText from "../../components/desktop/action-text/ActionText";
+
+//mobile components
 
 export default function Home() {
   const { screenMode } = useScreen();
@@ -24,23 +26,22 @@ export default function Home() {
     //********* DESKTOP *************//
     <div className={stylesDesktop.home}>
       {/*---------- HERO SECTION------- */}
-
       <div className={stylesDesktop["hero-section"]}>
-        <NavBar />
+        <D_NavBar />
 
         <div
           className={stylesDesktop["flex-wrapper-row"]}
           style={{ justifyContent: "space-between", alignItems: "flex-start" }}
         >
-          <HeroText />
-          <HeroWindow />
+          <D_HeroText />
+          <D_HeroWindow />
         </div>
       </div>
 
       {/*---------- BRAND SECTION------- */}
       <div className={stylesDesktop["brand-section"]}>
         <div className={stylesDesktop["BrandTitle"]}>
-          <BrandTitle />
+          <D_BrandTitle />
         </div>
 
         <div
@@ -48,17 +49,17 @@ export default function Home() {
           style={{ justifyContent: "center", alignItems: "flex-end" }}
         >
           <div className={stylesDesktop["ManAtDesk"]}>
-            <ManAtDesk />
+            <D_ManAtDesk />
           </div>
           <div className={stylesDesktop["IPhone"]}>
-            <IPhone />
+            <D_IPhone />
           </div>
         </div>
       </div>
 
       {/*---------- PROCESS SECTION------- */}
       <div className={stylesDesktop["process-section"]}>
-        <CartoonPhone style={{ position: "absolute" }} />
+        <D_CartoonPhone style={{ position: "absolute" }} />
 
         <div
           className={stylesDesktop["flex-wrapper-column"]}
@@ -76,23 +77,23 @@ export default function Home() {
               width: "100%",
             }}
           >
-            <InfoCard>
+            <D_InfoCard>
               <h2 className="inter-600">Create</h2>
               <p className="inter-200">
                 a holistic website / social media format that will grow your
                 brand’s online identity.
               </p>
-            </InfoCard>
-            <ProcessTitle />
+            </D_InfoCard>
+            <D_ProcessTitle />
           </div>
 
-          <InfoCard>
+          <D_InfoCard>
             <h2 className="inter-600">Maintain</h2>
             <p className="inter-200">
               your site’s responsiveness by updating features and repairing
               bugs.
             </p>
-          </InfoCard>
+          </D_InfoCard>
           <div
             className={stylesDesktop["flex-wrapper-row"]}
             style={{
@@ -102,29 +103,48 @@ export default function Home() {
             }}
           >
             <div></div>
-            <InfoCard>
+            <D_InfoCard>
               <h2 className="inter-600">Inform</h2>
               <p className="inter-200">
                 you of the proper techniques to maintain / update your site
                 independently.
               </p>
-            </InfoCard>
+            </D_InfoCard>
           </div>
         </div>
       </div>
 
       {/*---------- QUESTION SECTION------- */}
       <div className={stylesDesktop["question-section"]}>
-        <QuestionGrid />
+        <D_QuestionGrid />
       </div>
 
       {/*---------- ACTION SECTION------- */}
       <div className={stylesDesktop["action-section"]}>
-        <ActionText />
+        <D_ActionText />
       </div>
     </div>
   ) : (
     //********* MOBILE *************//
-    <div className={stylesMobile.home}>NUTHIN</div>
+    <div className={stylesMobile.home}>
+      {/*---------- HERO SECTION------- */}
+      <div className={stylesMobile["hero-section"]}>hero</div>
+
+      {/*---------- BRAND SECTION------- */}
+      <div className={stylesMobile["brand-section"]}>
+        <div className={stylesMobile["brand-title"]}>
+          <D_BrandTitle />
+        </div>
+      </div>
+
+      {/*---------- PROCESS SECTION------- */}
+      <div className={stylesMobile["process-section"]}>process</div>
+
+      {/*---------- QUESTION SECTION------- */}
+      <div className={stylesMobile["question-section"]}>question</div>
+
+      {/*---------- ACTION SECTION------- */}
+      <div className={stylesMobile["action-section"]}>action</div>
+    </div>
   );
 }
