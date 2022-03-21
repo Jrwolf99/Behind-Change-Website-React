@@ -3,10 +3,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import styles from "./QuestionGrid.module.css";
+import "../../../globalstyles/typography.css";
 
 import planet from "../../../assets/planet.png";
 import webbing from "../../../assets/webbing.png";
 import tools from "../../../assets/tools.png";
+import graph from "../../../assets/graph.png";
 
 export default function QuestionGrid() {
   return (
@@ -23,7 +25,6 @@ export default function QuestionGrid() {
         <div className={styles["webbing"]}>
           <img src={webbing} alt="a planet's background webbing" />
         </div>
-
         <div className={styles["top-of-webbing"]}>
           <p>
             Increase your <br />
@@ -38,31 +39,62 @@ export default function QuestionGrid() {
       <div className={`${styles["card"]} ${styles["three"]}`}>
         <img src={tools} alt="tools used to build behind change websites" />
         <p>
-          An <strong>abundance</strong> of tools at your disposal.
+          An <strong>abundance</strong>
+          <br /> of tools at your <br /> disposal.
         </p>
       </div>
 
       <div className={`${styles["card"]} ${styles["four"]}`}>
         <p>Stat on web usage</p>
+        <img src={graph} alt="a graph" />
       </div>
       <div className={`${styles["card"]} ${styles["five"]}`}>
-        <p>
-          &lt;body&gt; &lt;img src=”accessibility.jpg” alt =”when a picture
-          can’t be worth a thousand words, we ensure our descriptions are worth
-          a thousand pictures” /&gt; &lt;/body&gt; Built with acccesibility in
-          mind.
+        <p className={`${styles["htmlstyle"]} monospace-400`}>
+          <h1>&lt;</h1>
+          <h2>body</h2>
+          <h1>&gt;</h1>
+          <br />
+          <h1>&lt;</h1>
+          <h2>img </h2>
+          src<h1>=”</h1>accessibility.jpg<h1>”</h1> <br />
+          alt<h1>=”</h1>
+          <h3>
+            when a picture can’t be <br />
+            worth a thousand words, <br />
+            we ensure our descriptions are <br />
+            worth a thousand pictures
+          </h3>
+          <h1>”</h1> <h1>/&gt;</h1> <br />
+          <h1>&lt;/</h1>
+          <h2>body</h2>
+          <h1>&gt;</h1> <br />
+        </p>
+        <p className={`${styles["built-text"]}`}>
+          Built with <br /> <strong>acccesibility</strong> in mind.
         </p>
       </div>
       <div className={`${styles["card"]} ${styles["six"]}`}>
-        <p>6 Years Combined Experience</p>
+        <div className={`${styles["text"]}`}>
+          <h1>6</h1>
+          <h2> Years</h2>
+          <p className="inter-500">
+            Combined
+            <br /> Experience
+          </p>
+        </div>
       </div>
       <div className={`${styles["card"]} ${styles["seven"]}`}>
-        <p>$0 cost</p>
+        <div className={`${styles["text"]} inter-300`}>
+          <h1>$0</h1>
+          <p className="inter-500">Cost</p>
+        </div>
       </div>
 
-      <div className={`${styles["card"]} ${styles["eight"]}`}>
-        <p>Still not convinced?</p>
-        <Link to="/portfolio">
+      <div className={`${styles["card"]} ${styles["eight"]} inter-400`}>
+        <p>
+          Still not <strong>convinced?</strong>
+        </p>
+        <Link className={`${styles["link"]}  inter-400`} to="/portfolio">
           &nbsp;Browse our previous projects to see what you’re missing &gt;
         </Link>
       </div>
