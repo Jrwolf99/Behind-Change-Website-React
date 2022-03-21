@@ -124,6 +124,7 @@ export default function Home() {
       </div>
     </div>
   ) : (
+    //********* MOBILE *************//
     <div className={stylesMobile.home}>NUTHIN</div>
   );
 }
