@@ -1,10 +1,5 @@
 .hero-window {
   position: relative;
-  width: 40vw;
-}
-
-.hero-window > * {
-  width: 100%;
 }
 
 .whiteframe {
@@ -25,10 +20,10 @@
 
 .bubbles {
   position: absolute;
-  top: 5vw;
+  top: 2vw;
   left: 0vw;
 }
 
 .girl-on-rocket {
-  transform: scale(1.15) translatey(2vw);
+  transform: scale(1.15);
 }

@@ -25,24 +25,33 @@
 }
 
 .arrow {
-  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 2em;
 }
 
 .arrow__body {
-  height: 6vw;
-  width: 0.5vw;
+  height: 3.5rem;
+  width: 0.4rem;
   background-color: white;
-  border-radius: 20px;
+  border-radius: 1rem;
 }
-.arrow__head {
-  height: 2.9vw;
-  width: 2.9vw;
-  border-right: 1vw solid white;
-  border-bottom: 1vw solid white;
-  border-radius: 0.4vw;
-  transform: rotate(45deg) translate(-1.8vw, -1.8vw);
+.arrow__head-left {
+  background-color: white;
+
+  height: 1.5rem;
+  width: 0.4rem;
+  border-radius: 10px;
+  transform: rotate(-45deg) translate(0.6rem, -1.3rem);
+}
+
+.arrow__head-right {
+  background-color: white;
+
+  height: 1.5rem;
+  width: 0.4rem;
+  border-radius: 10px;
+  transform: rotate(45deg) translate(-1.7rem, -2.3rem);
 }
