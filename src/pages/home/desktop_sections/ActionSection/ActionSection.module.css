@@ -1,0 +1,33 @@
+:root {
+  --bluegradient: linear-gradient(
+    112.87deg,
+    #013481 0%,
+    #4b93c0 43.23%,
+    #96f2ff 100%
+  );
+  --whiteish: #f6f6f6;
+
+  overflow-x: hidden;
+}
+
+.action-section {
+  padding: 0 15vw;
+  background: var(--bluegradient);
+  border-radius: 0 0 100px 100px;
+}
+
+@media (min-width: 1500px) {
+  .action-section {
+    padding: 0 30vw;
+  }
+}
+
+/* utilities */
+.flex-wrapper-row {
+  display: flex;
+}
+
+.flex-wrapper-column {
+  display: flex;
+  flex-direction: column;
+}
