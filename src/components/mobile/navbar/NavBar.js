@@ -13,7 +13,9 @@ export default function Nav() {
         <p className={`${"playfair-600"} ${styles["change"]}`}>&nbsp;Change</p>
       </div>
       <div className={styles["hamburger-icon"]}>
-        <img src={CircleMenu} alt="Menu Button" />
+        <div className={styles["line1"]}></div>
+        <div className={styles["line2"]}></div>
+        <div className={styles["line3"]}></div>
       </div>
     </nav>
   );

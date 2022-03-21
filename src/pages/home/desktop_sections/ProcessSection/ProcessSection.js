@@ -2,6 +2,7 @@ import React from "react";
 
 //styles
 import styles from "./ProcessSection.module.css";
+import "../../../../globalstyles/utility.css";
 
 //components
 import CartoonPhone from "../../../../components/desktop/cartoon-phone/CartoonPhone";
@@ -13,7 +14,7 @@ export default function ProcessSection() {
     <div className={styles["process-section"]}>
       <CartoonPhone style={{ position: "absolute" }} />
       <div
-        className={styles["flex-wrapper-column"]}
+        className="flex-wrapper-column"
         style={{
           justifyContent: "space-around",
           alignItems: "center",
@@ -21,7 +22,7 @@ export default function ProcessSection() {
         }}
       >
         <div
-          className={styles["flex-wrapper-row"]}
+          className="flex-wrapper-row"
           style={{
             justifyContent: "space-around",
             alignItems: "center",
@@ -45,7 +46,7 @@ export default function ProcessSection() {
           </p>
         </InfoCard>
         <div
-          className={styles["flex-wrapper-row"]}
+          className="flex-wrapper-row"
           style={{
             justifyContent: "space-between",
             alignItems: "center",

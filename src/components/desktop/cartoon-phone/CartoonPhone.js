@@ -1,6 +1,6 @@
 import React from "react";
 
-import Cartoonphone from "../../../assets/cartoon-phone.png";
+import Cartoonphone from "../../../assets/images/cartoon-phone.png";
 
 import styles from "./CartoonPhone.module.css";
 

@@ -1,10 +1,17 @@
 :root {
-  --bluegradient: linear-gradient(
+  --bluegradient-desktop: linear-gradient(
     112.87deg,
     #013481 0%,
     #4b93c0 43.23%,
     #96f2ff 100%
   );
+
+  --bluegradient-mobile: linear-gradient(
+    164.94deg,
+    #2926ae -2.35%,
+    #63cfe7 96.57%
+  );
+
   --whiteish: #f6f6f6;
 
   overflow-x: hidden;

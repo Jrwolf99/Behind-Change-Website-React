@@ -5,10 +5,10 @@ import { Link } from "react-router-dom";
 import styles from "./QuestionGrid.module.css";
 import "../../../globalstyles/typography.css";
 
-import planet from "../../../assets/planet.png";
-import webbing from "../../../assets/webbing.png";
-import tools from "../../../assets/tools.png";
-import graph from "../../../assets/graph.png";
+import planet from "../../../assets/images/planet.png";
+import webbing from "../../../assets/images/webbing.png";
+import tools from "../../../assets/images/tools.png";
+import graph from "../../../assets/images/graph.png";
 
 export default function QuestionGrid() {
   return (

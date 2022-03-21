@@ -2,6 +2,7 @@ import React from "react";
 
 //styles
 import styles from "./HeroSection.module.css";
+import "../../../../globalstyles/utility.css";
 
 //components
 import NavBar from "../../../../components/desktop/navbar/NavBar";
@@ -13,7 +14,7 @@ export default function HeroSection() {
     <div className={styles["hero-section"]}>
       <NavBar />
       <div
-        className={styles["flex-wrapper-row"]}
+        className="flex-wrapper-row"
         style={{ justifyContent: "space-between", alignItems: "flex-start" }}
       >
         <HeroText />

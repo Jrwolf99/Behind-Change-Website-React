@@ -2,6 +2,7 @@ import React from "react";
 
 //styles
 import styles from "./BrandSection.module.css";
+import "../../../../globalstyles/utility.css";
 
 //components
 import BrandTitle from "../../../../components/desktop/brand-title/BrandTitle";
@@ -15,7 +16,7 @@ export default function BrandSection() {
         <BrandTitle />
       </div>
       <div
-        className={styles["flex-wrapper-row"]}
+        className="flex-wrapper-row"
         style={{ justifyContent: "center", alignItems: "flex-end" }}
       >
         <div className={styles["ManAtDesk"]}>
