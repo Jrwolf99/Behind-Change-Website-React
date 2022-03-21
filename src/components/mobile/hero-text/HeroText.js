@@ -7,9 +7,11 @@ import "../../../globalstyles/utility.css";
 export default function HeroText() {
   return (
     <div className={styles["hero-text"]}>
-      <div></div>
+      <div className={styles["hero-text-bar"]}></div>
       <p className="inter-200">
-        Positive impact <strong>deserves</strong> positive support.
+        Positive impact <br />
+        <strong>deserves</strong>
+        <br /> positive support.
       </p>
     </div>
   );
