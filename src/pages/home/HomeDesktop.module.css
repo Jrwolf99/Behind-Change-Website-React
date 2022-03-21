@@ -25,7 +25,8 @@ body {
   padding: 0 15vw;
 }
 .process-section {
-  padding: 2vw 15vw;
+  padding: 3vw 15vw;
+
   background: var(--bluegradient);
   border-radius: 0 0 100px 100px;
   position: relative;
@@ -42,7 +43,17 @@ body {
   border-radius: 0 0 100px 100px;
 }
 
-/* BRAND SECTION CSS */
+@media (min-width: 1500px) {
+  .hero-section,
+  .brand-section,
+  .question-section,
+  .action-section {
+    padding: 0 30vw;
+  }
+  .process-section {
+    padding: 3vw 30vw;
+  }
+}
 
 /* utilities */
 .flex-wrapper-row {

@@ -12,15 +12,11 @@
 }
 
 .behind {
-  font-size: 2vw;
+  font-size: 2rem;
   color: white;
 }
 
 .change {
-  font-size: 2vw;
+  font-size: 2rem;
   color: white;
-}
-
-.hamburger-icon {
-  width: 2vw;
 }

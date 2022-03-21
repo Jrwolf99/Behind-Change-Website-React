@@ -24,8 +24,10 @@ export default function Home() {
     //********* DESKTOP *************//
     <div className={stylesDesktop.home}>
       {/*---------- HERO SECTION------- */}
+
       <div className={stylesDesktop["hero-section"]}>
         <NavBar />
+
         <div
           className={stylesDesktop["flex-wrapper-row"]}
           style={{ justifyContent: "space-between", alignItems: "flex-start" }}
@@ -71,7 +73,7 @@ export default function Home() {
             style={{
               justifyContent: "space-around",
               alignItems: "center",
-              width: "100vw",
+              width: "100%",
             }}
           >
             <InfoCard>
@@ -94,9 +96,9 @@ export default function Home() {
           <div
             className={stylesDesktop["flex-wrapper-row"]}
             style={{
-              justifyContent: "space-around",
+              justifyContent: "space-between",
               alignItems: "center",
-              width: "100vw",
+              width: "100%",
             }}
           >
             <div></div>
@@ -118,10 +120,7 @@ export default function Home() {
 
       {/*---------- ACTION SECTION------- */}
       <div className={stylesDesktop["action-section"]}>
-
         <ActionText />
-
-
       </div>
     </div>
   ) : (
