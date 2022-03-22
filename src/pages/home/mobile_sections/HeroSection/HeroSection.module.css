@@ -1,7 +1,28 @@
 .hero-section {
-  /* min-height: 70vh; */
   background-color: var(--whiteish);
   background-image: url("../../../../assets/images/backgroundSVGs/Hero.svg");
   background-size: cover contain;
   background-repeat: no-repeat;
+  position: relative;
+}
+
+.bubbles {
+  width: 95vw;
+  height: 85%;
+
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  align-content: space-between;
+  /* background-color: rebeccapurple; */
+
+  position: absolute;
+  top: 10vh;
+}
+
+.bubble {
+  margin: 1rem;
+}
+.bubble3 {
+  transform: translateX(-40px);
 }

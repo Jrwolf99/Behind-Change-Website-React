@@ -25,6 +25,17 @@
   background: #e9e9eb;
   border-radius: 20px;
   transform: translateX(-20px);
+  position: relative;
+}
+
+.textbubble--1::before {
+  content: url("../../../assets/images/chat1.svg");
+  position: absolute;
+  top: 35px;
+  left: -10px;
+  /* border: 2px red solid; */
+  height: 19px;
+  width: 23px;
 }
 
 .textbubble--2 {
@@ -32,6 +43,16 @@
   border-radius: 20px;
   transform: translateX(20px);
 }
+
+.textbubble--2::before {
+  content: url("../../../assets/images/chat2.svg");
+  position: absolute;
+  bottom: 3px;
+  right: -11px;
+  height: 19px;
+  width: 23px;
+}
+
 .font2 {
   color: white;
   font-size: 1rem;

@@ -6,17 +6,18 @@
 .question-title {
   font-size: 2rem;
   text-align: center;
+  transform: translateY(70px);
 }
 
 .q-bubbles {
   display: flex;
   flex-direction: column;
   align-items: baseline;
+  transform: translateY(100px);
 }
 
 .q-bubble {
-  margin: 20px 0;
-  padding: 30px;
+  padding: 50px;
   background: linear-gradient(103.11deg, #df5d34 0%, #ffd569 100%);
   color: white;
 }
@@ -24,22 +25,22 @@
 .q-bubble1 {
   background: linear-gradient(103.11deg, #8c23df 0%, #f25eff 100%);
   border-radius: 40px 0px 40px 40px;
-  margin: 20px 0 20px auto;
+  margin: 40px 0 40px auto;
 }
 .q-bubble2 {
   background: linear-gradient(103.11deg, #232bdf 0%, #5ed8ff 100%);
   border-radius: 0px 40px 40px 40px;
-  margin: 20px auto 20px 0;
+  margin: 40px auto 40px 0;
 }
 .q-bubble3 {
   background: linear-gradient(103.11deg, #2a7a59 0%, #89e75d 100%);
   border-radius: 40px 0px 40px 40px;
-  margin: 20px 0 20px auto;
+  margin: 40px 0 40px auto;
 }
 .q-bubble4 {
   background: linear-gradient(103.11deg, #df5d34 0%, #ffd569 100%);
   border-radius: 0px 40px 40px 40px;
-  margin: 20px auto 20px 0;
+  margin: 40px auto 40px 0;
 }
 
 .portfolio-info {
@@ -51,6 +52,8 @@
   border-radius: 40px;
   margin: 3rem;
   padding: 3em 2em;
+
+  transform: translateY(200px);
 }
 .portfolio-link {
   color: white;
