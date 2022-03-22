@@ -1,5 +1,5 @@
 .hero-section {
-  min-height: 100vh;
+  /* min-height: 70vh; */
   background-color: var(--whiteish);
   background-image: url("../../../../assets/images/backgroundSVGs/Hero.svg");
   background-size: cover contain;
