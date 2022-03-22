@@ -1,13 +1,25 @@
 .process-section {
-  padding: 3vw 15vw;
+  padding: 12vw 15vw;
+  position: relative;
 
   background: var(--bluegradient-desktop);
+
   border-radius: 0 0 100px 100px;
-  position: relative;
+}
+
+.process-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6vw;
+  background: var(--whiteish);
+  border-radius: 0px 0px 100px 100px;
 }
 
 @media (min-width: 1500px) {
   .process-section {
-    padding: 3vw 30vw;
+    padding: 12vw 30vw;
   }
 }

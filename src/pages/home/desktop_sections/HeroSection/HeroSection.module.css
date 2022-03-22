@@ -1,7 +1,9 @@
 .hero-section {
   min-height: 100vh;
   padding: 0 15vw;
+
   background: var(--bluegradient-desktop);
+
   border-radius: 0 0 100px 100px;
 }
 

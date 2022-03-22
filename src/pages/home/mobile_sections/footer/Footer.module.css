@@ -1,0 +1,22 @@
+.myFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3em 5em;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.behind {
+  font-size: 1.2rem;
+  color: #848484;
+}
+
+.change {
+  font-size: 1.2rem;
+  color: #464646;
+}

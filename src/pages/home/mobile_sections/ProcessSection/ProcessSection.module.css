@@ -1,3 +1,15 @@
 .process-section {
-  background: var(--bluegradient-mobile);
+  background-color: var(--whiteish);
+  background-image: url("../../../../assets/images/backgroundSVGs/Process.svg");
+  background-size: cover contain;
+  background-repeat: no-repeat;
+
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 3em;
 }

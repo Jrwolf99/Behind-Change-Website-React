@@ -1,3 +1,4 @@
 .brand-section {
-  background: var(--whiteish);
+  background-color: var(--whiteish);
+  position: relative;
 }

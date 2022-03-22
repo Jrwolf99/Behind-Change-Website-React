@@ -10,7 +10,7 @@ export function ScreenProvider({ children }) {
     const handleResize = () => {
       setScreenWidth(window.innerWidth);
       console.log(screenWidth);
-      screenWidth > 1000 ? setScreenMode("desktop") : setScreenMode("mobile");
+      screenWidth > 800 ? setScreenMode("desktop") : setScreenMode("mobile");
     };
     screenMode === null && handleResize();
     window.addEventListener("resize", handleResize);

@@ -1,6 +1,7 @@
 .brand-section {
   background: var(--whiteish);
   padding: 0 15vw;
+  /* position: relative; */
 }
 
 @media (min-width: 1500px) {

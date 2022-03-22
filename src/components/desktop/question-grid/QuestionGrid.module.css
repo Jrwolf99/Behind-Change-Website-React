@@ -58,6 +58,10 @@
   background: linear-gradient(149.25deg, #049999 0%, #2a38b3 100%);
 }
 
+.questions-grid .webbing {
+  height: 100%;
+}
+
 .questions-grid .two .top-of-webbing {
   position: absolute;
   display: flex;
@@ -73,7 +77,8 @@
 .top-of-webbing > p {
   color: white;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.5rem;
+  padding: 0.3em;
 }
 
 /* -----------------------TOOLS------------------- */

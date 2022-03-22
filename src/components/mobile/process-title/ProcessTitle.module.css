@@ -1,0 +1,10 @@
+.process-title {
+  padding: 0 3em;
+}
+.process-title .header {
+  font-size: 2rem;
+  text-align: center;
+}
+.process-title .subheader {
+  font-size: 1rem;
+}
