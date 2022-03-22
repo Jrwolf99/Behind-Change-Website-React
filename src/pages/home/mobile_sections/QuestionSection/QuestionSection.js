@@ -14,13 +14,13 @@ export default function QuestionSection() {
           + How long does the process take?
         </p>
         <p className={` ${styles["q-bubble"]} ${styles["q-bubble2"]}`}>
-          + Is your service{" "}
+          + Is your service
           <h4
             className="inter-400"
             style={{ fontWeight: 500, display: "inline" }}
           >
             Really
-          </h4>{" "}
+          </h4>
           free?
         </p>
         <p className={` ${styles["q-bubble"]} ${styles["q-bubble3"]}`}>
