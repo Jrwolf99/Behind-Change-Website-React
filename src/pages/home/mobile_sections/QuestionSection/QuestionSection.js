@@ -19,13 +19,12 @@ export default function QuestionSection() {
             className="inter-400"
             style={{ fontWeight: 500, display: "inline" }}
           >
-            Really
+            &nbsp;Really&nbsp;
           </h4>
           free?
         </p>
         <p className={` ${styles["q-bubble"]} ${styles["q-bubble3"]}`}>
-          + Who owns the rights to the <br />
-          website once it’s finished?
+          + Who owns the rights to the website once it’s finished?
         </p>
         <p className={` ${styles["q-bubble"]} ${styles["q-bubble4"]}`}>
           + What happens if I dislike the design?

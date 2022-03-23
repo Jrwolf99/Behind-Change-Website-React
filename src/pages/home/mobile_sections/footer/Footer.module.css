@@ -2,7 +2,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3em 5em;
+  padding: 3em 10vw;
+}
+
+@media (max-width: 400px) {
+  .myFooter {
+    flex-direction: column;
+  }
 }
 
 .logo {

@@ -1,5 +1,5 @@
 .process-title {
-  padding: 0 3em;
+  max-width: 250px;
 }
 .process-title .header {
   font-size: 2rem;
@@ -7,4 +7,5 @@
 }
 .process-title .subheader {
   font-size: 1rem;
+  max-width: 300px;
 }
