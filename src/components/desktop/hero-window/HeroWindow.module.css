@@ -1,6 +1,5 @@
 .hero-window {
   position: relative;
-  background-color: rebeccapurple;
 }
 
 .whiteframe {
@@ -21,10 +20,26 @@
 
 .bubbles {
   position: absolute;
-  top: 2vw;
-  left: 0vw;
+  top: 100px;
+  left: 50px;
+  width: 80%;
 }
 
 .girl-on-rocket {
   transform: scale(1.15);
+  animation: bubblefloat 10s ease-in-out infinite;
+}
+
+@keyframes bubblefloat {
+  0% {
+    transform: translatey(0px);
+  }
+
+  50% {
+    transform: translatey(-20px);
+  }
+
+  100% {
+    transform: translatey(0px);
+  }
 }
