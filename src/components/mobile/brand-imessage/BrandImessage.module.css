@@ -31,7 +31,7 @@
 .textbubble--1::before {
   content: url("../../../assets/images/chat1.svg");
   position: absolute;
-  top: 35px;
+  bottom: 0px;
   left: -10px;
   /* border: 2px red solid; */
   height: 19px;

@@ -12,10 +12,9 @@ export default function ProcessTitle() {
       </h1>
       <br />
 
-      <p className="inter-200">
-        Planning is a crucial step to any business’s <br />
-        success. That’s why we follow the same
-        <br /> guideline for each of our clients.
+      <p className={`inter-200 ${styles["subheader"]}`}>
+        Planning is a crucial step to any business’s success. That’s why we
+        follow the same guideline for each of our clients.
       </p>
     </div>
   );

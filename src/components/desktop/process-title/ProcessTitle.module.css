@@ -1,10 +1,15 @@
+.process-title {
+  margin-left: 5rem;
+}
+
 .process-title h1 {
   color: white;
   font-size: 3rem;
   line-height: 3rem;
 }
 
-.process-title p {
+.process-title .subheader {
   color: white;
   font-size: 1rem;
+  max-width: 300px;
 }
