@@ -18,7 +18,7 @@
   border-radius: 0px 0px 100px 100px;
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 2000px) {
   .process-section {
     padding: 12vw 30vw;
   }

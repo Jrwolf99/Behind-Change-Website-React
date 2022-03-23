@@ -8,21 +8,48 @@
 
 .bubbles {
   width: 95vw;
-  height: 85%;
-
+  height: 80%;
   display: grid;
   grid-template-columns: auto auto;
   justify-content: space-between;
   align-content: space-between;
-  /* background-color: rebeccapurple; */
 
   position: absolute;
   top: 10vh;
+}
+.bubble3 {
+  left: -5vw;
+  bottom: 0;
+  position: absolute;
 }
 
 .bubble {
   margin: 1rem;
 }
+
+.bubble1 {
+  animation: bubblefloat 4.3s ease-in-out infinite;
+}
+.bubble2 {
+  animation: bubblefloat 5.1s ease-in-out infinite;
+}
 .bubble3 {
-  transform: translateX(-40px);
+  animation: bubblefloat 5s ease-in-out infinite;
+}
+.bubble4 {
+  animation: bubblefloat 4.4s ease-in-out infinite;
+}
+
+@keyframes bubblefloat {
+  0% {
+    transform: translatey(0px);
+  }
+
+  50% {
+    transform: translatey(10px);
+  }
+
+  100% {
+    transform: translatey(0px);
+  }
 }

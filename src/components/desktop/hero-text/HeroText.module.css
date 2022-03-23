@@ -4,7 +4,6 @@
   justify-content: center;
   align-items: center;
 
-  padding: 1vw;
   max-width: 25vw;
 }
 
@@ -14,14 +13,14 @@
 }
 
 .hero-text p:nth-of-type(1) {
-  font-size: clamp(0rem, 2rem, 100rem);
+  font-size: 2rem;
 }
 
 .hero-text p:nth-of-type(2) {
-  font-size: clamp(0rem, 1rem, 100rem);
+  font-size: 1rem;
 }
 .hero-text p:nth-of-type(3) {
-  font-size: clamp(0rem, 1rem, 100rem);
+  font-size: 1rem;
 }
 
 .arrow {
@@ -44,7 +43,7 @@
   height: 1.5rem;
   width: 0.4rem;
   border-radius: 10px;
-  transform: rotate(-45deg) translate(0.6rem, -1.3rem);
+  transform: rotate(-45deg) translate(0.48rem, -1.1rem);
 }
 
 .arrow__head-right {
@@ -53,5 +52,23 @@
   height: 1.5rem;
   width: 0.4rem;
   border-radius: 10px;
-  transform: rotate(45deg) translate(-1.7rem, -2.3rem);
+  transform: rotate(45deg) translate(-1.55rem, -2.1rem);
+}
+
+@media (max-width: 1300px) {
+  .hero-text p:nth-of-type(1) {
+    font-size: 1.5rem;
+  }
+
+  .hero-text p:nth-of-type(2) {
+    font-size: 0.9rem;
+  }
+  .hero-text p:nth-of-type(3) {
+    font-size: 0.9rem;
+  }
+
+  .arrow__body {
+    height: 2.5rem;
+    width: 0.4rem;
+  }
 }

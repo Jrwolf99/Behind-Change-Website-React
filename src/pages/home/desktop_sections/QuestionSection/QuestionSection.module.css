@@ -4,7 +4,7 @@
   border-radius: 0 0 100px 100px;
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 2000px) {
   .question-section {
     padding: 0 20vw;
   }

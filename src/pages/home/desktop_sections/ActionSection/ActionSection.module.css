@@ -16,8 +16,8 @@
   border-radius: 0px 0px 100px 100px;
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 2000px) {
   .action-section {
-    padding: 0 30vw;
+    padding: 0 20vw;
   }
 }

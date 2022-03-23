@@ -37,7 +37,7 @@ function useWindowSize() {
 export default function Home() {
   const [width, height] = useWindowSize();
   console.log(width);
-  return width > 800 ? (
+  return width > 1000 ? (
     //********* DESKTOP *************//
     <div>
       <DHeroSection />

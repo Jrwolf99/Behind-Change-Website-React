@@ -23,18 +23,23 @@ export default function HeroSection() {
         <img
           src={Bubbles1}
           className={`${styles["bubble"]} ${styles["bubble1"]}`}
+          alt="bubbles on header for mobile"
         />
         <img
           src={Bubbles2}
           className={`${styles["bubble"]} ${styles["bubble2"]}`}
+          alt="bubbles on header for mobile"
         />
         <img
           src={Bubbles3}
           className={`${styles["bubble"]} ${styles["bubble3"]}`}
+          alt="bubbles on header for mobile"
         />
+        <div></div>
         <img
           src={Bubbles4}
           className={`${styles["bubble"]} ${styles["bubble4"]}`}
+          alt="bubbles on header for mobile"
         />
       </div>
     </div>

@@ -4,8 +4,8 @@
   /* position: relative; */
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 2000px) {
   .brand-section {
-    padding: 0 30vw;
+    padding: 0 20vw;
   }
 }
