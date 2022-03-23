@@ -25,6 +25,12 @@
   width: 80%;
 }
 
+.dash-line {
+  position: absolute;
+  bottom: 15vh;
+  left: -30vw;
+}
+
 .girl-on-rocket {
   transform: scale(1.15);
   animation: bubblefloat 10s ease-in-out infinite;
