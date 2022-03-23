@@ -8,6 +8,7 @@ import WhiteFrameOutline from "../../../assets/images/whiteframe-outline.svg";
 import GirlOnRocket from "../../../assets/images/Saly-1.png";
 import Bubbles from "../../../assets/images/bubbles.svg";
 import DashLine from "../../../assets/images/HeroDash.svg";
+import Canvas from "../canvas/Canvas";
 
 export default function HeroWindow() {
   return (
@@ -33,6 +34,8 @@ export default function HeroWindow() {
       <img className={styles["bubbles"]} src={Bubbles} alt="Bubbles" />
 
       <img className={styles["dash-line"]} src={DashLine} alt="DashLine" />
+
+      <Canvas />
 
       <img
         className={styles["girl-on-rocket"]}
