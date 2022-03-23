@@ -1,5 +1,6 @@
+import React, { useLayoutEffect, useState } from "react";
+
 //styles
-import { useScreen } from "../../hooks/useScreen";
 import styles from "./Home.module.css";
 import "../../globalstyles/typography.css";
 
@@ -20,9 +21,23 @@ import MFooter from "./mobile_sections/footer/Footer";
 
 //mobile components
 
+function useWindowSize() {
+  const [size, setSize] = useState([0, 0]);
+  useLayoutEffect(() => {
+    function updateSize() {
+      setSize([window.innerWidth, window.innerHeight]);
+    }
+    window.addEventListener("resize", updateSize);
+    updateSize();
+    return () => window.removeEventListener("resize", updateSize);
+  }, []);
+  return size;
+}
+
 export default function Home() {
-  const { screenMode } = useScreen();
-  return screenMode === "desktop" ? (
+  const [width, height] = useWindowSize();
+  console.log(width);
+  return width > 800 ? (
     //********* DESKTOP *************//
     <div>
       <DHeroSection />

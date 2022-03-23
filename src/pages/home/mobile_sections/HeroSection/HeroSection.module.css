@@ -1,7 +1,7 @@
 .hero-section {
   background-color: var(--whiteish);
   background-image: url("../../../../assets/images/backgroundSVGs/Hero.svg");
-  background-size: cover contain;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   position: relative;
 }
