@@ -15,7 +15,6 @@ export default function HeroSection() {
 
   return (
     <div className={styles["hero-section"]}>
-      {/* <MyCanvas className={styles["dash-line"]} draw={drawDashLine} /> */}
       <NavBar />
       <div
         className="flex-wrapper-row"
@@ -23,6 +22,7 @@ export default function HeroSection() {
       >
         <HeroText />
         <HeroWindow />
+        <div className={styles["ellipse"]} />
       </div>
     </div>
   );

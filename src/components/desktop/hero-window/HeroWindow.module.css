@@ -4,7 +4,7 @@
 
 .whiteframe {
   position: absolute;
-  z-index: 1;
+  z-index: 3;
 }
 
 .outline1 {
@@ -29,6 +29,7 @@
   position: relative;
   height: 100%;
   animation: girlfloat 5s ease-in-out infinite;
+  z-index: 2;
 }
 
 @media (max-height: 600px) {

@@ -18,3 +18,14 @@
     padding: 0 20vw;
   }
 }
+
+.ellipse {
+  position: absolute;
+  top: 50vh;
+  left: 40vw;
+  filter: blur(130px);
+  width: 256px;
+  height: 267px;
+  background-color: white;
+  z-index: 1;
+}
