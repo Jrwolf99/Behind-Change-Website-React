@@ -1,23 +1,12 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useCallback } from "react";
+import useCanvas from "../../../hooks/useCanvas";
 
 // https://medium.com/@pdx.lucasm/canvas-with-react-js-32e133c05258
 
-export default function Canvas(props) {
-  const canvasRef = useRef(null);
+export default function MyCanvas(props) {
+  const { draw, ...rest } = props;
 
-  const draw = (ctx) => {
-    ctx.fillStyle = "#000000";
-    ctx.beginPath();
-    ctx.arc(50, 100, 20, 0, 2 * Math.PI);
-    ctx.fill();
-  };
+  const canvasRef = useCanvas(draw);
 
-  useEffect(() => {
-    const canvas = canvasRef.current;
-    const context = canvas.getContext("2d");
-
-    draw(context);
-  }, [draw]);
-
-  return <canvas ref={canvasRef} {...props}></canvas>;
+  return <canvas ref={canvasRef} {...rest}></canvas>;
 }
