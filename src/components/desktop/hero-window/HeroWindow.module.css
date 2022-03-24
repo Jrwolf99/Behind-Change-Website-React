@@ -27,7 +27,14 @@
 
 .girl-on-rocket {
   position: relative;
+  height: 100%;
   animation: bubblefloat 10s ease-in-out infinite;
+}
+
+@media (max-height: 600px) {
+  .girl-on-rocket {
+    height: 350px;
+  }
 }
 
 @keyframes bubblefloat {
