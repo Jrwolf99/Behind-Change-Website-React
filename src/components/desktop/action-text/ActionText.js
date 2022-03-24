@@ -11,7 +11,7 @@ export default function ActionText() {
         Make an <strong>impact!</strong>
         <br /> Let’s get in touch.
       </p>
-      <Link className={styles["mylink"]}>
+      <Link className={styles["mylink"]} to="/contact">
         <p className={styles["mylink-text"]}>Start a proposal &gt;</p>
       </Link>
     </div>
