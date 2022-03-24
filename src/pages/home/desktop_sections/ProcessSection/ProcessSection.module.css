@@ -2,7 +2,7 @@
   padding: 12vw 15vw;
   position: relative;
 
-  background: var(--bluegradient-desktop);
+  background: linear-gradient(124.09deg, #072282 0%, #63cfe7 100%);
 
   border-radius: 0 0 100px 100px;
 }

@@ -9,11 +9,11 @@
 
 .hero-text p {
   color: white;
-  padding: 10px;
+  padding: 30px;
 }
 
 .hero-text p:nth-of-type(1) {
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 
 .hero-text p:nth-of-type(2) {
