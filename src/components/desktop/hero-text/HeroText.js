@@ -17,8 +17,7 @@ export default function HeroText() {
       <p className="inter-200">Scroll down to discover your solution.</p>
       <div className={styles["arrow"]}>
         <div className={styles["arrow__body"]}></div>
-        <div className={styles["arrow__head-left"]}></div>
-        <div className={styles["arrow__head-right"]}></div>
+        <div className={styles["arrow__head"]}></div>
       </div>
     </div>
   );

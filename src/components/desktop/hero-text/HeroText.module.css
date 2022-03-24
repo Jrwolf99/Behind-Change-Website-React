@@ -9,7 +9,7 @@
 
 .hero-text p {
   color: white;
-  padding: 30px;
+  padding: 20px 20px;
 }
 
 .hero-text p:nth-of-type(1) {
@@ -21,6 +21,7 @@
 }
 .hero-text p:nth-of-type(3) {
   font-size: 1rem;
+  text-align: center;
 }
 
 .arrow {
@@ -31,28 +32,13 @@
   padding: 2em;
 }
 
-.arrow__body {
-  height: 3.5rem;
-  width: 0.4rem;
-  background-color: white;
-  border-radius: 1rem;
-}
-.arrow__head-left {
-  background-color: white;
-
-  height: 1.5rem;
-  width: 0.4rem;
-  border-radius: 10px;
-  transform: rotate(-45deg) translate(0.48rem, -1.1rem);
-}
-
-.arrow__head-right {
-  background-color: white;
-
-  height: 1.5rem;
-  width: 0.4rem;
-  border-radius: 10px;
-  transform: rotate(45deg) translate(-1.55rem, -2.1rem);
+.arrow {
+  background-color: red;
+  background: url(../../../assets/images/Arrow1.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
 }
 
 @media (max-width: 1300px), (max-height: 600px) {
@@ -69,7 +55,7 @@
 
   .arrow__body {
     height: 2.5rem;
-    width: 0.4rem;
+    width: 0.3rem;
   }
 }
 
@@ -87,6 +73,5 @@
 
   .arrow__body {
     height: 2.5rem;
-    width: 0.4rem;
   }
 }
