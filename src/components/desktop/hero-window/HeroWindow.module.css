@@ -20,7 +20,7 @@
 
 .bubbles {
   position: absolute;
-  top: 100px;
+  top: 6vw;
   left: 50px;
   width: 80%;
 }
@@ -28,7 +28,7 @@
 .girl-on-rocket {
   position: relative;
   height: 100%;
-  animation: bubblefloat 10s ease-in-out infinite;
+  animation: girlfloat 5s ease-in-out infinite;
 }
 
 @media (max-height: 600px) {
@@ -37,16 +37,16 @@
   }
 }
 
-@keyframes bubblefloat {
+@keyframes girlfloat {
   0% {
-    transform: translatey(0px);
+    transform: translatey(-30px);
   }
 
   50% {
-    transform: translatey(-20px);
+    transform: translatey(-40px);
   }
 
   100% {
-    transform: translatey(0px);
+    transform: translatey(-30px);
   }
 }

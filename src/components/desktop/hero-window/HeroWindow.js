@@ -7,8 +7,6 @@ import WhiteFrame from "../../../assets/images/whiteframe.svg";
 import WhiteFrameOutline from "../../../assets/images/whiteframe-outline.svg";
 import GirlOnRocket from "../../../assets/images/Saly-1.png";
 import Bubbles from "../../../assets/images/bubbles.svg";
-import DashLine from "../../../assets/images/HeroDash.svg";
-import MyCanvas from "../../tools/canvas/Canvas";
 
 export default function HeroWindow() {
   return (
