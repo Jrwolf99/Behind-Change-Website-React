@@ -1,4 +1,5 @@
 import React, { useLayoutEffect, useState } from "react";
+import { useWindowSize } from "../../hooks/useWindowSize";
 
 //styles
 import styles from "./Home.module.css";
@@ -20,19 +21,6 @@ import MQuestionSection from "./mobile_sections/QuestionSection/QuestionSection"
 import MFooter from "./mobile_sections/footer/Footer";
 
 //mobile components
-
-function useWindowSize() {
-  const [size, setSize] = useState([0, 0]);
-  useLayoutEffect(() => {
-    function updateSize() {
-      setSize([window.innerWidth, window.innerHeight]);
-    }
-    window.addEventListener("resize", updateSize);
-    updateSize();
-    return () => window.removeEventListener("resize", updateSize);
-  }, []);
-  return size;
-}
 
 export default function Home() {
   const [width, height] = useWindowSize();

@@ -5,6 +5,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 //components
 import Home from "./pages/home/Home";
+import Contact from "./pages/contact/Contact";
 
 function App() {
   return (
@@ -15,7 +16,9 @@ function App() {
             <Home />
           </Route>
           <Route path="/portfolio">portfolio</Route>
-          <Route path="/contact">contact</Route>
+          <Route path="/contact">
+            <Contact />
+          </Route>
         </Switch>
       </BrowserRouter>
     </div>

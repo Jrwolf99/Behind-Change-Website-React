@@ -1,0 +1,13 @@
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+.contact-form label,
+.contact-form input {
+  display: block;
+}
+
+.contact-form input {
+  outline: none;
+  border: none;
+}
