@@ -28,13 +28,11 @@
   background-size: 102% 102%;
   background-repeat: no-repeat;
   margin-left: auto;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 5em;
-
   position: relative;
 }
 
@@ -54,7 +52,6 @@
   grid-template-columns: auto auto;
   justify-content: space-between;
   align-content: space-between;
-
   position: absolute;
   top: 10vh;
   left: -5vw;

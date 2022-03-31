@@ -17,7 +17,7 @@ export default function Footer() {
         <p className={`playfair-600 ${styles["change"]}`}>&nbsp;Change</p>
       </div>
 
-      <div className={`roboto-400 ${styles["links"]}`}>
+      {/* <div className={`roboto-400 ${styles["links"]}`}>
         <Link to="">Home</Link>
         <Link to="">Previous Projects</Link>
         <Link to="">About</Link>
@@ -29,7 +29,7 @@ export default function Footer() {
         <img src={FacebookLogo} />
         <img src={LinkedInLogo} />
         <img src={TwitterLogo} />
-      </div>
+      </div> */}
     </div>
   );
 }
