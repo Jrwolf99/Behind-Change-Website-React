@@ -5,7 +5,6 @@
     #4b93c0 43.23%,
     #80e5f2 100%
   );
-
   position: relative;
 }
 
@@ -23,7 +22,7 @@
 }
 
 .contact-page {
-  height: 100vh;
+  height: 120vh;
   width: 50vw;
   background-image: url("../../assets/images/backgroundSVGs/contact.svg");
   background-size: 102% 102%;

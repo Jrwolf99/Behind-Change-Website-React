@@ -1,6 +1,7 @@
 .contact-form {
   display: flex;
   flex-direction: column;
+  z-index: 2;
 }
 .contact-form label,
 .contact-form input {
@@ -8,6 +9,10 @@
 }
 
 .contact-form input {
-  outline: none;
   border: none;
+  border-bottom: 2px solid rgb(82, 82, 82);
+  background: transparent;
+  margin-bottom: 1rem;
+  width: 30vw;
+  
 }
