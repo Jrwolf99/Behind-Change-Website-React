@@ -10,21 +10,37 @@ export default function ContactForm() {
       action="https://formsubmit.co/jrwolf@crimson.ua.edu"
       method="POST"
     >
+      <input
+        type="hidden"
+        name="_cc"
+        value="jrwolf99@outlook.com,tbg101098@hotmail.com"
+      />
+
       <label>
         Preferred Name:
-        <input></input>
+        <input type="text" id="name" name="name" placeholder="Your name" />
       </label>
       <label>
         Email:
-        <input type="email"></input>
+        <input type="email" id="email" name="email" placeholder="Your email" />
       </label>
       <label>
         Website Link (if you have one):
-        <input></input>
+        <input
+          type="text"
+          id="website"
+          name="website"
+          placeholder="Your website (optional)"
+        />
       </label>
       <label>
         A note:
-        <input></input>
+        <input
+          type="text"
+          id="note"
+          name="note"
+          placeholder="Anything you would like to ask or mention"
+        />
       </label>
       <button>Send</button>
     </form>
