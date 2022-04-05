@@ -18,29 +18,19 @@ export default function ContactForm() {
 
       <label>
         Preferred Name:
-        <input type="text" id="name" name="name" placeholder="Your name" />
+        <input type="text" id="name" name="name" />
       </label>
       <label>
         Email:
-        <input type="email" id="email" name="email" placeholder="Your email" />
+        <input type="email" id="email" name="email" />
       </label>
       <label>
         Website Link (if you have one):
-        <input
-          type="text"
-          id="website"
-          name="website"
-          placeholder="Your website (optional)"
-        />
+        <input type="text" id="website" name="website" />
       </label>
       <label>
         A note:
-        <input
-          type="text"
-          id="note"
-          name="note"
-          placeholder="Anything you would like to ask or mention"
-        />
+        <input type="text" id="note" name="note" />
       </label>
       <button>Send</button>
     </form>

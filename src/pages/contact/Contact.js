@@ -17,7 +17,7 @@ export default function Contact() {
   return (
     <div className={styles["contact-page-gradient"]}>
       <div className={styles["nav"]}>
-        <NavBar buttonclr="blue" />
+        <NavBar buttontype="proposal" />
       </div>
 
       <div className={styles["rocket"]}>
