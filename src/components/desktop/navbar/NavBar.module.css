@@ -22,20 +22,3 @@
   color: white;
 }
 
-.bar {
-  height: 5px;
-  width: 31px;
-  margin: 0.5rem;
-  background-color: rgb(0, 0, 0);
-  transition: all 0.5s ease;
-}
-
-
-.open .bar1 {
-  /* background-color: red; */
-  transform: rotate(-45deg) translate(-10px, -11px);
-}
-
-.open .bar2 {
-  transform: rotate(225deg) translate(20px, 0px);
-}
