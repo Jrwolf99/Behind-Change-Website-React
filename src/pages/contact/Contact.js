@@ -14,29 +14,36 @@ import Bubbles4 from "../../assets/images/DBubble4.svg";
 import Rocket from "../../assets/images/rocket.png";
 
 import { motion } from "framer-motion";
-import { contactVarients } from "./animation-varients/contactVarients";
-import { rocketVarients } from "./animation-varients/rocketVarients";
+import { ContactVariants } from "../../animations/ContactVariants";
+import { RocketVariants } from "../../animations/RocketVariants";
+import { FadeVariants } from "../../animations/FadeVariants";
 
 export default function Contact() {
   return (
     <div className={styles["contact-page-gradient"]}>
-      <div className={styles["nav"]}>
+      <motion.div
+        className={styles["nav"]}
+        variants={FadeVariants}
+        initial="hidden"
+        animate="visible"
+        exit="exit"
+      >
         <NavBar buttontype="proposal" />
-      </div>
-
+      </motion.div>
       <motion.div
         className={styles["rocket"]}
-        variants={rocketVarients}
+        variants={RocketVariants}
+        initial="hidden"
+        animate="visible"
         exit="exit"
       >
         <img src={Rocket} alt="a rocket" />
       </motion.div>
-
       <motion.div
         className={styles["contact-page"]}
-        variants={contactVarients}
+        variants={ContactVariants}
         initial="hidden"
-        animation="visible"
+        animate="visible"
         exit="exit"
       >
         <p className={styles["header"]}>

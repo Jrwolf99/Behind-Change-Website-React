@@ -13,7 +13,6 @@ export default function BackButton() {
         <motion.div
             onMouseOver={() => { setIsHovered(true) }}
             onMouseLeave={() => setIsHovered(false)}
-            exit={{ opacity: 0 }}
         >
             <motion.div
                 animate={isHovered ? { rotate: -45 } : {}}

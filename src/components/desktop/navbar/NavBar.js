@@ -7,8 +7,6 @@ import ProposalButton from "../../../assets/images/ProposalButton.svg";
 import { Link } from "react-router-dom";
 import BackButton from "./BackButton/BackButton";
 
-import { motion } from "framer-motion";
-
 export default function Nav({ buttontype, buttonpressed }) {
   return (
     <nav className={styles["myNav"]}>
