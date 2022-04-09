@@ -9,12 +9,21 @@ import CartoonPhone from "../../../../components/desktop/cartoon-phone/CartoonPh
 import InfoCard from "../../../../components/desktop/info-card/InfoCard";
 import ProcessTitle from "../../../../components/desktop/process-title/ProcessTitle";
 
+import { motion } from "framer-motion";
+import { StaggerVariants } from "../../../../animations/StaggerVariants";
+import { useInView } from "react-intersection-observer";
+
 export default function ProcessSection() {
+  const { ref, inView } = useInView();
+
   return (
     <div className={styles["process-section"]}>
       <CartoonPhone style={{ position: "absolute" }} />
-      <div
+      <motion.div
         className="flex-wrapper-column"
+        variants={StaggerVariants}
+        ref={ref}
+        animate={inView ? "visible" : "hidden"}
         style={{
           justifyContent: "space-around",
           alignItems: "center",
@@ -62,7 +71,7 @@ export default function ProcessSection() {
             </p>
           </InfoCard>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

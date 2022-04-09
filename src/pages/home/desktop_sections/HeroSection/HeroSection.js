@@ -12,12 +12,7 @@ import { FadeVariants } from "../../../../animations/FadeVariants";
 
 export default function HeroSection() {
   return (
-    <div
-      className={styles["hero-section"]}
-      variants={FadeVariants}
-      initial="hidden"
-      animate="visible"
-    >
+    <div className={styles["hero-section"]}>
       <motion.div variants={FadeVariants} initial="hidden" animate="visible">
         <NavBar />
       </motion.div>

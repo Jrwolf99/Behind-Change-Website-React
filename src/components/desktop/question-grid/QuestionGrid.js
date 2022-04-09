@@ -14,39 +14,50 @@ import Convinced from "./convinced/Convinced";
 import CommonQuestions from "./common-questions/CommonQuestions";
 import InnerGrid from "./inner-grid/InnerGrid";
 
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { StaggerVariants } from "../../../animations/StaggerVariants";
+
 export default function QuestionGrid() {
+  const { ref, inView } = useInView();
+
   return (
-    <div className={styles["questions-grid"]}>
-      <div className={`${styles["one"]}`}>
+    <motion.div
+      className={styles["questions-grid"]}
+      ref={ref}
+      variants={StaggerVariants}
+      animate={inView ? "visible" : "hidden"}
+    >
+      <motion.div className={`${styles["one"]}`} variants={StaggerVariants}>
         <Solutions />
-      </div>
-      <div className={`${styles["two"]}`}>
+      </motion.div>
+      <motion.div className={`${styles["two"]}`} variants={StaggerVariants}>
         <Reach />
-      </div>
-      <div className={`${styles["three"]}`}>
+      </motion.div>
+      <motion.div className={`${styles["three"]}`} variants={StaggerVariants}>
         <Abundance />
-      </div>
-      <div className={`${styles["four"]}`}>
+      </motion.div>
+      <motion.div className={`${styles["four"]}`} variants={StaggerVariants}>
         <WebUsage />
-      </div>
-      <div className={`${styles["five"]}`}>
+      </motion.div>
+      <motion.div className={`${styles["five"]}`} variants={StaggerVariants}>
         <Accessibility />
-      </div>
-      <div className={`${styles["six"]}`}>
+      </motion.div>
+      <motion.div className={`${styles["six"]}`} variants={StaggerVariants}>
         <Experience />
-      </div>
-      <div className={`${styles["seven"]}`}>
+      </motion.div>
+      <motion.div className={`${styles["seven"]}`} variants={StaggerVariants}>
         <Cost />
-      </div>
-      <div className={`${styles["eight"]} `}>
+      </motion.div>
+      <motion.div className={`${styles["eight"]}`} variants={StaggerVariants}>
         <Convinced />
-      </div>
-      <div className={styles["nine"]}>
+      </motion.div>
+      <motion.div className={`${styles["nine"]}`} variants={StaggerVariants}>
         <CommonQuestions />
-      </div>
-      <div className={styles["ten"]}>
+      </motion.div>
+      <motion.div className={`${styles["ten"]}`} variants={StaggerVariants}>
         <InnerGrid />
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 }
