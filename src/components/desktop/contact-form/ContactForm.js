@@ -5,8 +5,6 @@ import styles from "./ContactForm.module.css";
 
 import { motion } from "framer-motion";
 
-import ArrowBlue from "../../../assets/images/Arrowblue.svg";
-
 export default function ContactForm() {
   const [isHovered, toggleHover, setIsHovered] = useToggle();
 
@@ -53,7 +51,9 @@ export default function ContactForm() {
           viewBox="0 0 353 21"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          animate={isHovered ? { x: 55, opacity: 1 } : { opacity: 0 }}
+          initial={{ opacity: 0 }}
+          animate={isHovered ? { x: 10, opacity: 1 } : {}}
+          transition={{ ease: "anticipate", duration: 0.2, type: "spring" }}
         >
           <path d="M212 10.5H353" stroke="#5BCEFF" stroke-width="20" />
           <path d="M92 10.5H181" stroke="#5BCEFF" stroke-width="20" />
@@ -65,7 +65,7 @@ export default function ContactForm() {
           viewBox="0 0 210 148"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          animate={isHovered ? { x: 45 } : { x: -100 }}
+          animate={isHovered ? { x: 0 } : { x: -100 }}
         >
           <path
             d="M207.071 81.0711C210.976 77.1658 210.976 70.8342 207.071 66.9289L143.431 3.28932C139.526 -0.615921 133.195 -0.615921 129.289 3.28932C125.384 7.19456 125.384 13.5262 129.289 17.4315L185.858 74L129.289 130.569C125.384 134.474 125.384 140.805 129.289 144.711C133.195 148.616 139.526 148.616 143.431 144.711L207.071 81.0711ZM0 84L200 84V64L0 64L0 84Z"
