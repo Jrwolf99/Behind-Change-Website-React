@@ -1,0 +1,36 @@
+ 
+ 
+ .reach {
+    position: relative;
+    background: linear-gradient(149.25deg, #049999 0%, #2a38b3 100%);
+    border: 1px solid #E2E2E2;
+    border-radius: 40px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ 
+ .webbing {
+    height: 100%;
+  }
+  
+ .top-of-webbing {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .planet {
+    width: 120%;
+  }
+  
+  .top-of-webbing > p {
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+  }

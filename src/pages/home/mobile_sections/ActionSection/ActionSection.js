@@ -14,7 +14,7 @@ export default function ActionSection() {
         Otherwise... <br /> Let's make an <strong>impact!</strong>
       </p>
       <br />
-      <Link className={`inter-400 ${styles["action-link"]}`}>
+      <Link to="/contact" className={`inter-400 ${styles["action-link"]}`}>
         Start a proposal &gt;
       </Link>
     </div>

@@ -1,0 +1,20 @@
+.text {
+  padding:  1em 3em ;
+}
+
+.cost .text > p {
+    color: #5f5f5f;
+    text-align: center;
+    
+  }
+  
+  .cost .text > h1 {
+    background: linear-gradient(117.22deg, #69e3dc 10.62%, #00d1ff 89.09%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 3.3rem;
+    font-weight: 500;
+
+
+  }

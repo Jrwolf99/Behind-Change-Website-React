@@ -6,6 +6,8 @@
     #80e5f2 100%
   );
   position: relative;
+  height: 120vh;
+  width: 100vw;
 }
 
 .nav {

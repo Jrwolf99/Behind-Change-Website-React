@@ -1,0 +1,24 @@
+
+.convinced {
+    background: linear-gradient(92.65deg, #8008c9 0%, #ed58c5 100%);
+    padding: 2.5em;
+    border: 1px solid #E2E2E2;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.convinced > p,
+.convinced  > p > strong {
+  color: white;
+  font-size: 2rem;
+}
+
+.convinced  .link {
+  color: white;
+  text-decoration-line: underline;
+}

@@ -1,0 +1,16 @@
+.abundance {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+ .abundance img {
+    width: 70%;
+  }
+  
+ .abundance p {
+    font-size: 2rem;
+    text-align: center;
+    padding: 1em 0 0 0;
+  }

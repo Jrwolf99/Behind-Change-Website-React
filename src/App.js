@@ -1,17 +1,20 @@
 //packages
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { Switch, Route, useLocation } from "react-router-dom";
 
 //styles
 
 //components
 import Home from "./pages/home/Home";
 import Contact from "./pages/contact/Contact";
+import { AnimatePresence } from "framer-motion";
 
 function App() {
+  const location = useLocation();
+
   return (
     <div className="App">
-      <BrowserRouter>
-        <Switch>
+      <AnimatePresence>
+        <Switch location={location} key={location.key}>
           <Route exact path="/">
             <Home />
           </Route>
@@ -19,7 +22,7 @@ function App() {
             <Contact />
           </Route>
         </Switch>
-      </BrowserRouter>
+      </AnimatePresence>
     </div>
   );
 }
