@@ -3,16 +3,12 @@ import React from "react";
 import styles from "./Contact.module.css";
 import "../../globalstyles/typography.css";
 
-
-
 //Desktop Components
 import ContactForm from "../../components/desktop/contact-form/ContactForm";
 import NavBar from "../../components/desktop/navbar/NavBar";
 
 //Mobile Components
-import MNavBar from "../../components/mobile/navbar/NavBar"
-
-
+import MNavBar from "../../components/mobile/navbar/NavBar";
 
 //assets
 import Bubbles1 from "../../assets/images/DBubble1.svg";
@@ -21,18 +17,11 @@ import Bubbles3 from "../../assets/images/DBubble3.svg";
 import Bubbles4 from "../../assets/images/DBubble4.svg";
 import Rocket from "../../assets/images/rocket.png";
 
-
-
-
-
 import { motion } from "framer-motion";
 import { ContactVariants } from "../../animations/ContactVariants";
 import { RocketVariants } from "../../animations/RocketVariants";
 import { FadeVariants } from "../../animations/FadeVariants";
 import { useWindowSize } from "../../hooks/useWindowSize";
-
-
-
 
 export default function Contact() {
   const [width, height] = useWindowSize();
@@ -66,7 +55,6 @@ export default function Contact() {
           animate="visible"
           exit="exit"
         >
-
           <div className={styles["bubbles"]}>
             <img
               src={Bubbles1}
@@ -98,17 +86,15 @@ export default function Contact() {
               <strong>Chat.</strong>
             </p>
             <ContactForm></ContactForm>
-
           </div>
-
         </motion.div>
       </div>
     </div>
   ) : (
     //********* MOBILE *************//
     <div>
-      <div className={styles['mobile-contact-page-gradient']}>
-        <MNavBar />
+      <div className={styles["mobile-contact-page-gradient"]}>
+        <MNavBar buttontype={"proposal"} />
         <p className={styles["mobile-header"]}>
           Let's
           <br />
@@ -117,11 +103,7 @@ export default function Contact() {
         <div className={styles["mobile-contact"]}>
           <ContactForm></ContactForm>
         </div>
-
-
       </div>
-
-
     </div>
   );
 }

@@ -6,7 +6,7 @@ import styles from "./NavBar.module.css";
 
 import ProposalButton from "../../../assets/images/ProposalButton.svg";
 
-export default function Nav({ buttontype }) {
+export default function NavBar({ buttontype }) {
   return (
     <nav className={styles["myNav"]}>
       <div className={styles["logo"]}>
