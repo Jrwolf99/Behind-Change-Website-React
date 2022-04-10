@@ -30,7 +30,6 @@ import { ContactVariants } from "../../animations/ContactVariants";
 import { RocketVariants } from "../../animations/RocketVariants";
 import { FadeVariants } from "../../animations/FadeVariants";
 import { useWindowSize } from "../../hooks/useWindowSize";
-import MContactForm from "./mobile_components/MContactForm/MContactForm";
 
 
 
@@ -67,12 +66,6 @@ export default function Contact() {
           animate="visible"
           exit="exit"
         >
-          <p className={styles["header"]}>
-            Let's
-            <br />
-            <strong>Chat.</strong>
-          </p>
-          <ContactForm></ContactForm>
 
           <div className={styles["bubbles"]}>
             <img
@@ -97,6 +90,17 @@ export default function Contact() {
               alt="bubbles on header for mobile"
             />
           </div>
+
+          <div className={styles["contactheader"]}>
+            <p className={styles["header"]}>
+              Let's
+              <br />
+              <strong>Chat.</strong>
+            </p>
+            <ContactForm></ContactForm>
+
+          </div>
+
         </motion.div>
       </div>
     </div>
@@ -106,8 +110,14 @@ export default function Contact() {
       <div className={styles['mobile-contact-page-gradient']}>
 
         <MNavBar />
-        <MContactForm />
-
+        <p className={styles["mobile-header"]}>
+          Let's
+          <br />
+          <strong>Chat.</strong>
+        </p>
+        <div className={styles["mobile-contact"]}>
+          <ContactForm></ContactForm>
+        </div>
 
 
       </div>
