@@ -108,7 +108,6 @@ export default function Contact() {
     //********* MOBILE *************//
     <div>
       <div className={styles['mobile-contact-page-gradient']}>
-
         <MNavBar />
         <p className={styles["mobile-header"]}>
           Let's

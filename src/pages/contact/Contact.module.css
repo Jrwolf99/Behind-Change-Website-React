@@ -7,8 +7,12 @@
     #80e5f2 100%
   );
   position: relative;
-  width: 100vw;
 }
+
+.mobile-contact-page-gradient {
+  padding-bottom: 1em;
+}
+
 
 .nav {
   padding: 0 6em;
@@ -111,7 +115,8 @@
   background-color: white;
   padding: 1em;
   border-radius: 30px;
-  margin:  1rem auto;
+  margin:  2rem auto;
+  padding-bottom: 2rem;
   width: 80%;
 }
 
@@ -119,5 +124,6 @@
   margin: 30vh 0;
   padding: 1em;
   width: 65%;
+
 
 }
