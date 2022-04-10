@@ -7,7 +7,7 @@ import ProposalButton from "../../../assets/images/ProposalButton.svg";
 import { Link } from "react-router-dom";
 import BackButton from "./BackButton/BackButton";
 
-export default function Nav({ buttontype, buttonpressed }) {
+export default function Nav({ buttontype }) {
   return (
     <nav className={styles["myNav"]}>
       <Link className={styles["logo"]} to="/">
