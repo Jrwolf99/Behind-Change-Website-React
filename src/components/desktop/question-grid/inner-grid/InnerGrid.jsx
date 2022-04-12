@@ -8,10 +8,10 @@ import { motion } from 'framer-motion';
 export default function InnerGrid() {
 
 
-    const [buttonFlip1, setButtonFlip1] = useState(false);
-    const [buttonFlip2, setButtonFlip2] = useState(false);
-    const [buttonFlip3, setButtonFlip3] = useState(false);
-    const [buttonFlip4, setButtonFlip4] = useState(false);
+    const [buttonFlip1, setButtonFlip1] = useState(true);
+    const [buttonFlip2, setButtonFlip2] = useState(true);
+    const [buttonFlip3, setButtonFlip3] = useState(true);
+    const [buttonFlip4, setButtonFlip4] = useState(true);
 
     return (
         <div className={styles['inner-grid']}>
